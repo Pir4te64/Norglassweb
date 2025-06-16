@@ -85,4 +85,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./ # <-- Sube la raíz (que contiene el build)
-          server-dir: /public_html/
+          server-dir: /public_html/nuevo/
