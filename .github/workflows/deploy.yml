@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write # <--- Permiso para escribir contenido en el repo
@@ -41,7 +41,7 @@ jobs:
             git push origin --delete production
           fi
 
-          # Crea la rama 'production' basada en 'master'
+          # Crea la rama 'production' basada en 'main'
           git checkout -b production
 
       # 4️⃣ Borrar todo y copiar solo los archivos de la build
@@ -70,7 +70,7 @@ jobs:
           rm -rf dist node_modules
 
           git add .
-          git commit -m "Deploy production from master"
+          git commit -m "Deploy production from main"
 
       # 5️⃣ Empujar los cambios a la rama "production"
       - name: Push to production branch
