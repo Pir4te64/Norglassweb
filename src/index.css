@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling nativo y compensación para el navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* altura aproximada del navbar */
+}
+
+/* Cursor SVG (si lo sigues usando globalmente) */
+body {
+  /* cursor: url('/ventana.svg') 16 16, auto; */
+}
+
+/* Glow animado eliminado para evitar interferencias */
+
+/* Drop-shadow suave azul en el navbar */
+nav {
+  /* Tailwind aplica shadow-lg, aquí refuerzo con un matiz azul */
+  box-shadow: 0 4px 8px rgba(30, 64, 175, 0.2);
+}
