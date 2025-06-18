@@ -30,7 +30,7 @@ const products = [
   },
   {
     title: "Vidrios Monolíticos",
-    img: "/13.png",
+    img: "/vidrios1.png",
     bullets: [
       "Cuando hablamos de vidrio o cristal monolítico nos referimos a aquellos vidrios formados solo por una masa vítrea, sin ningún otro tipo de capa o tratamiento.",
     ],

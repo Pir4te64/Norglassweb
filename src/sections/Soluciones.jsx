@@ -1,31 +1,18 @@
 // src/sections/Soluciones.jsx
-import React, { useState, useRef, useEffect } from "react";
-import Spline from "@splinetool/react-spline";
+import React from "react";
 
 export default function Soluciones() {
-  const [isLoading, setIsLoading] = useState(true);
-  const splineRef = useRef(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section id="soluciones" className="min-h-screen bg-white pt-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start h-full">
-          {/* Modelo 3D a la izquierda */}
-          <div
-            className="w-full h-full rounded-2xl overflow-hidden bg-gray-100 flex items-start relative"
-            ref={splineRef}
-          >
-            {isLoading && (
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
-                <div className="w-12 h-12 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
-              </div>
-            )}
-            <Spline scene="https://prod.spline.design/1R8LkuWqjB-1A9mZ/scene.splinecode" />
+          {/* Imagen a la izquierda */}
+          <div className="w-full h-full rounded-2xl overflow-hidden bg-gray-100 flex items-start relative">
+            <img
+              src="/camion.png"
+              alt="Camión de Norglass"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Texto a la derecha */}
