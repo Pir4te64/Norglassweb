@@ -82,9 +82,11 @@ export default function Footer() {
         {/* Iconos sociales */}
         <div className="flex space-x-6 text-xl">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/norglassvidrios/"
             aria-label="Instagram"
             className="hover:text-blue-500 transition"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
